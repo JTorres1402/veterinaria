@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+  .carousel {
+    margin-bottom: 4rem;
+  }
+  
+  .carousel-caption {
+    bottom: 3rem;
+    z-index: 10;
+  }
+  
+  
+  .carousel-item {
+    height: 32rem;
+  }
+  .carousel-item > img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-width: 100%;
+    height: 32rem;
+  }
+  
+  .marketing .col-lg-4 {
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+  .marketing h2 {
+    font-weight: 400;
+  }
+  .marketing .col-lg-4 p {
+    margin-right: .75rem;
+    margin-left: .75rem;
+  }
+  
+  .featurette-divider {
+    margin: 5rem 0; 
+  }
+  
+  .featurette-heading {
+    font-weight: 300;
+    line-height: 1;
+  }
+  
+  @media (min-width: 40em) {
+  
+    .carousel-caption p {
+      margin-bottom: 1.25rem;
+      font-size: 1.25rem;
+      line-height: 1.4;
+    }
+  
+    .featurette-heading {
+      font-size: 50px;
+    }
+  }
+  
+  @media (min-width: 62em) {
+    .featurette-heading {
+      margin-top: 7rem;
+    }
+  }
+  
+  .text{
+    font-family: system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+
+    font-size: 1.25rem;
+    
+  }
+
+  .text_h1{
+    font-family: system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    margin-top: 15%;
+    font-size: 50px;
+  }
+
+  .img{
+    width: 100%;
+    object-fit: contain;
+}
+
+.carousel-item{
+  background-color: #85c9be;
+}
+
+.carousel-caption{
+  right: 5%;
+  top: 5%;
+  width: 35%;
+  margin-left: 45%;
+}
+
+.img_decoration_icon:hover{
+  transform: scale(0.85, 0.85);
+  transition-duration: 300ms;
+}
+
+.img_decoration:hover{
+  transform: translate(20px, 40px);
+  transition-duration: 400ms;
+    box-shadow: 0 20px 40px 0px rgba(44, 42, 42, 0.322);
+    border-radius: 90px;
+}
+
+.text_decoration:hover{
+  transform: translate(-20px, -5px);
+  transition-duration: 400ms;
+    border-radius: 90px;
+}
+
+.p_decoration:hover{
+  transform: translate(6px, 5px);
+  transition-duration: 400ms;
+    border-radius: 90px;
+  cursor: pointer;
+}
+
+.h4{
+  font-family: 'Open Sans', sans-serif;
+  color: #71388c;
+}
+
+b{
+  font-weight: bold;
+}
+
+#truck{
+  animation-name: truck;
+  animation-duration: 6s;
+  position: relative;
+  //animation-timing-function:length($list: 1px);
+  animation-iteration-count: 1;
+}
+
+@keyframes truck {
+  0% {right: 0%; top: 0}
+  20% {right: 80%; top: 0;}
+  30% {right: 80%; top: 0;}
+  40% {right: 80%; top: 0;}
+  50% {right: 80%; top: 0; transform: scaleX(-1);}
+  60% {right: 0%; top: 0;transform: scaleX(-1);}
+  100% {right: 0%; top: 0;transform: scaleX(1);}
+}
+
+.a{
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+.a:hover{
+  transition-duration: 150ms;
+      border:1px solid rgb(255, 255, 255);
+      color: rgb(0, 0, 0);
+      background-color: rgb(255, 255, 255);
+      border-radius: 20px;
+      left: 5px;
+      padding-left: 5px;
+      padding-right: 5px;
+}
