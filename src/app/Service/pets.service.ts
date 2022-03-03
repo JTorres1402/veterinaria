@@ -6,12 +6,12 @@ import { HttpClient } from '@angular/common/http';
 })
 export class PetsService {
 
-  url='http://localhost:3000'
+  url='https://pets-vet.herokuapp.com/'
 
   constructor(private http: HttpClient) { }
 
   getMoscota(){
-    return this.http.get<any>(this.url+'/pets/')
+    return this.http.get<any>(this.url+'pets')
   }
 
 }
