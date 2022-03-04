@@ -6,12 +6,20 @@ import { HttpClient } from '@angular/common/http';
 })
 export class PetsService {
 
-  url='https://pets-vet.herokuapp.com/'
+  url='https://pets-vet.azurewebsites.net/'
 
   constructor(private http: HttpClient) { }
 
-  getMoscota(){
+  getMoscotas(){
     return this.http.get<any>(this.url+'pets')
+  }
+
+  getMoscota(id: string | number){
+    return this.http.get<any>(this.url+'pets/'+id)
+  }
+
+  postMascota(Pets:any){
+    return this.http.post(this.url, Pets)
   }
 
 }

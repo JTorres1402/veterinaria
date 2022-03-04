@@ -5,6 +5,7 @@ import { InicioComponent } from './inicio/inicio.component';
 import { ListPetsComponent } from './list-pets/list-pets.component';
 import { PublicaComponent } from './publica/publica.component';
 import { TiendaComponent } from './tienda/tienda.component';
+import { ViewComponent } from './view/view.component';
 
 const routes: Routes = [
   {path: '',component: InicioComponent},
@@ -13,6 +14,7 @@ const routes: Routes = [
   {path: 'tienda', component: TiendaComponent},
   {path: 'publicar', component: PublicaComponent},
   {path: 'agenda', component:AgendaComponent},
+  {path: 'mascota/:id', component: ViewComponent},
   {path:'**', component: InicioComponent},
 
 ];

@@ -18,7 +18,7 @@ export class ListPetsComponent implements OnInit {
   }
 
   getMascota(){
-    this.api.getMoscota().subscribe(data =>{
+    this.api.getMoscotas().subscribe(data =>{
       this.pets = data
     })
   }

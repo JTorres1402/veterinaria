@@ -1,0 +1,14 @@
+<div class="container p-5">
+    <div class="row featurette" *ngFor="let pet of pets">
+        <div class="col-md-7 p-4">
+          <h2 class="featurette-heading text_h1 text_decoration"><b>{{pet.name}}</b></h2>
+          <p class="text">{{pet.description}}</p>
+          <p class="text">Edad: {{pet.age}}</p>
+          <button type="button" class="btn btn-outline-primary" (click)="boto()">Adoptar</button>
+        </div>
+        <div class="col-md-5">
+          <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto img_decoration" src="{{pet.photo}}" alt="" width="500px">
+        </div>
+      </div>
+      <hr class="featurette-divider">
+</div>

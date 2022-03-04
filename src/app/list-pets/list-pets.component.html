@@ -2,7 +2,7 @@
   <ul class="cards">
     <li class="cards_item" *ngFor="let pet of pets">
       <div class="card">
-        <div class="card_image"><img class="img " routerLink="../shop" src="{{pet.photo}}"></div>
+        <div class="card_image"><img class="img " routerLink="../mascota/{{pet.id}}" src="{{pet.photo}}"></div>
         <div class="card_content">
           <h2 class="card_title">{{pet.name}}</h2>
           <p class="card_text">{{pet.description}}</p>

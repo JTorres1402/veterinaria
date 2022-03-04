@@ -1,1 +1,15 @@
-<p>tienda works!</p>
+<div class="main">
+    <ul class="cards">
+        <li class="cards_item" *ngFor="let product of products">
+            <div class="card">
+                <div class="card_image"><img class="img" src="{{product.imgproduct}}"></div>
+                <div class="card_content">
+                    <h2 class="card_title">{{product.nameproduct}}</h2>
+                    <p class="card_description"><b>Precio:</b> {{product.priceproduct | currency:'USD'}}</p>
+                    <button type="button" routerLink="" class="btn btn-outline-success"><i
+                            class="bi bi-cart-plus-fill"></i> Comprar</button>
+                </div>
+            </div>
+        </li>
+    </ul>
+</div>

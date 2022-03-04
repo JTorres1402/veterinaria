@@ -1,0 +1,140 @@
+/* Font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+/* Design */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  background-color: #ecf9ff;
+}
+
+body {
+  color: #272727;
+  font-family: 'Roboto', serif;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0;
+  padding: 1rem;
+}
+
+.main{
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+
+.img {
+  width: 330px;
+  height: 300px;
+  vertical-align: middle;
+  object-fit: cover;
+  cursor: pointer;
+  
+}
+
+
+.btn {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  background-color: white;
+}
+
+.cards_item {
+  display: flex;
+  padding: 2rem;
+  
+}
+
+
+@media (min-width: 40rem) {
+  .cards_item {
+    width: 50%;
+
+  }
+}
+
+@media (min-width: 56rem) {
+  .cards_item {
+    width: 33.3333%;
+  }
+}
+
+.card {
+  background-color: white;
+  border-radius: 0.25rem;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  box-shadow: 0 10px 30px -12px rgba(0, 0, 0, 0.25);
+  border: rgb(255, 255, 255);
+  border-radius: 10px;
+}
+
+
+.card_content {
+  padding: 5%;
+  background: white;
+  font-family: 'Roboto', serif;
+  width: 330px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+
+.card_title {
+  color: black;
+  font-size: 1.1rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+  margin: 0px;
+  padding-top: 0px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.card_text {
+  color: black;
+  font-size:0.95 rem;
+  font-weight: 400;
+  margin: 0px;
+  padding-top: 0px;
+  line-height: 1.5;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.card_description{
+  padding-top: 3px;
+  padding-bottom: 20px;
+  color: black;
+  font-size:0.95 rem;
+  font-weight: 400;
+  margin: 0px;
+  line-height: 1.5;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.made_by{
+  font-weight: 400;
+  font-size: 13px;
+  margin-top: 35px;
+  text-align: center;
+}

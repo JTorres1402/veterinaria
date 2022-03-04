@@ -9,6 +9,7 @@ import { InicioComponent } from './inicio/inicio.component';
 import { TiendaComponent } from './tienda/tienda.component';
 import { PublicaComponent } from './publica/publica.component';
 import { AgendaComponent } from './agenda/agenda.component';
+import { ViewComponent } from './view/view.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { AgendaComponent } from './agenda/agenda.component';
     InicioComponent,
     TiendaComponent,
     PublicaComponent,
-    AgendaComponent
+    AgendaComponent,
+    ViewComponent
   ],
   imports: [
     BrowserModule,
